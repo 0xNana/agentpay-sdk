@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+.bun/
 
 # Frontend build output
 dist/
@@ -7,9 +8,11 @@ coverage/
 *.tsbuildinfo
 
 # Foundry build output and local deployments
+.foundry/
 contracts/out/
 contracts/cache/
 contracts/broadcast/
+contracts/.compass-verify/
 broadcast/
 
 # Local environment and secrets
@@ -33,3 +36,6 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# Local agent scaffold
+.agents/skills/example/
